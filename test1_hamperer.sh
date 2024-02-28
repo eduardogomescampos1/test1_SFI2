@@ -1,2 +1,2 @@
-sudo stress --cpu n --timeout 300
+sudo stress --cpu 3 --timeout 360
 
