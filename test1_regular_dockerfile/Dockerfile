@@ -7,4 +7,4 @@ RUN git clone https://github.com/eduardogomescampos1/test1_SFI2
 WORKDIR "/test1_SFI2"
 RUN git pull
 RUN chmod +x /test1_SFI2/test1_regular.sh
-RUN /test1_SFI2/test1_regular.sh
+ENTRYPOINT ["bash","test1_regular.sh"]
