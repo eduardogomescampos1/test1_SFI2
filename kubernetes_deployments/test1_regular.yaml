@@ -1,4 +1,4 @@
-apiVersion:
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: test1-regular-deployment
@@ -16,4 +16,4 @@ spec:
     spec:
       containers:
       - name: test1-regular
-        image: eduardogomescampos/test1_regular:1.0.0
+        image: eduardogomescampos/test1_regular:1.1.0
