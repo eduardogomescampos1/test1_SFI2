@@ -9,3 +9,5 @@ spec:
       containers:
         - name: test1-regular
           image: eduardogomescampos/test1_regular:1.1.0
+      nodeSelector:
+        name: worker1
