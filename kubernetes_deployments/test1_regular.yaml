@@ -1,0 +1,19 @@
+apiVersion:
+kind: Deployment
+metadata:
+  name: test1-regular-deployment
+  labels:
+    app: test1-regular
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: test1-regular
+  template:
+    metadata:
+      labels:
+        app: test1-regular
+    spec:
+      containers:
+      - name: test1-regular
+        image: eduardogomescampos/test1_regular:1.0.0
