@@ -1,0 +1,11 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: test1-regular-job
+spec:
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+        - name: test1-regular
+          image: eduardogomescampos/test1_regular:1.1.0

@@ -1,0 +1,11 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: test1-hamperer-job
+spec:
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+        - name: test1-hamperer
+          image: eduardogomescampos/test1_hamperer:1.1.0
