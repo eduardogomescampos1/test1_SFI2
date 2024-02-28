@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test1-hamperer-deployment
+  labels:
+    app: test1-hamperer
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: test1-hamperer
+  template:
+    metadata:
+      labels:
+        app: test1-hamperer
+    spec:
+      containers:
+      - name: test1-hamperer
+        image: eduardogomescampos/test1_hamperer:1.1.0
