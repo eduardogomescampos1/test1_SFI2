@@ -1,2 +1,2 @@
-stress --cpu 3 --timeout 360
+stress --cpu 3 --timeout 1800
 
