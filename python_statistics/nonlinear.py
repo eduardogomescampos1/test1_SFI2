@@ -72,7 +72,7 @@ if option == 'm':
     p_value = f.cdf(F,6,len(rows)-7)
     p_value = 1 - p_value
     if p_value < 0.0001:
-        print("The p-value for this test is significant")
+        print("The p-value for this test is not significant")
     else:
         print(f"The p-value for this test is {1 - p_value}")
 if option == 's':
