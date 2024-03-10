@@ -11,7 +11,7 @@ from scipy.optimize import curve_fit
 option = sys.argv[1]
 
 def non_linear(x,a,b):
-    return a + b*np.power(x,1./3)
+    return a + b*np.power(x,1./3) #Define the arbitrary equation you want to use to attempt a non_linear regression
 
 def non_linear_polynomial(x,a,b,c,d,e,f,g):
     return a + b*x +c*x**2 + d*x**3 + e*x**4 + f*x**5 + g*x**6
@@ -81,7 +81,7 @@ if option == 's':
     plt.plot(x, non_linear(x, *popt), 'r-', label= 'Regression')
     plt.savefig('plot.png') 
     print(f"Expected values for a and b, according to scipy, respectively: {popt}\n")
-    x_fix = [np.power(i,1./3) for i in x]
+    x_fix = [np.power(i,1./3) for i in x] # remember to also adapt this for your desired function
     x_fix = np.array(x_fix)
     x_fix= np.ravel(x_fix)
     xy = np.sum(x_fix*y)
