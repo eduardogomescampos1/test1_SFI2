@@ -6,3 +6,4 @@ for i in $(seq 2 $1); do
 	pid=$(($pid - 1))
 	cpulimit -p $pid -l $2 -z &
 done
+sleep 360
